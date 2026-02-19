@@ -4,6 +4,8 @@ from fastapi.responses import JSONResponse
 from app.api.routes import router
 from app.core.exceptions import DomainException
 
+from app.api.error_handlers import register_exception_handlers
+
 setup_logging()
 
 app = FastAPI()
