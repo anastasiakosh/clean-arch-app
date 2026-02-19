@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: clean-arch-app
+Version: 0.1.0
+Summary: Clean architecture demo
+Requires-Python: >=3.9

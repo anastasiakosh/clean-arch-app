@@ -1,10 +1,10 @@
 from dataclasses import dataclass
-from enum import Enim
+from enum import Enum
 from uuid import UUID, uuid4
 
 
 class OrderStatus(str, Enum):
-    CREATED = "ceated"
+    CREATED = "created"
     PAID = "paid"
     SHIPPED = "shipped"
 
@@ -13,7 +13,7 @@ class OrderStatus(str, Enum):
 class Order:
     id: UUID
     amount: float
-    status: OrderStatus = OrderStatus.CEATED
+    status: OrderStatus = OrderStatus.CREATED
 
     @staticmethod
     def create(amount: float) -> "Order":
